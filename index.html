@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yasaman Jamiyeva — Premium Art Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Meta -->
+    <meta name="theme-color" content="#1e1e2f" />
+</head>
+
+<body>
+
+    <!-- Animated SVG Background -->
+    <div id="background-container" aria-hidden="true"></div>
+
+    <!-- Main wrapper -->
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="header" role="banner" aria-label="Primary Navigation">
+            <nav class="nav container" role="navigation" aria-label="Main Navigation">
+                <a href="#" class="logo" aria-label="Home">Yasaman Jamiyeva</a>
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a href="#about" role="menuitem" tabindex="0">About</a></li>
+                    <li role="none"><a href="#gallery" role="menuitem" tabindex="0">Gallery</a></li>
+                    <li role="none"><a href="#exhibitions" role="menuitem" tabindex="0">Exhibitions</a></li>
+                    <li role="none"><a href="#contact" role="menuitem" tabindex="0">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <main>
+            <section class="hero container" role="region" aria-label="Introduction">
+                <div class="hero-text">
+                    <h1>Welcome to <span class="highlight">Yasaman Jamiyeva's</span> Art Portfolio</h1>
+                    <p class="tagline">Delicate, expressive, and timeless artworks</p>
+                    <a href="#gallery" class="btn-primary" role="button">Explore Gallery</a>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <img src="images/hero-art.jpg" alt="Example artwork by Yasaman Jamiyeva" />
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about container" tabindex="-1" aria-labelledby="about-title">
+                <h2 id="about-title">About Yasaman</h2>
+                <div class="about-content">
+                    <img src="images/portrait.jpg" alt="Portrait of Yasaman Jamiyeva" class="about-portrait" />
+                    <div class="about-text">
+                        <p>
+                            Yasaman Jamiyeva is a passionate young artist, blending feminine grace and emotional depth
+                            through her drawings and paintings. Her works invite viewers into an intimate world of
+                            color, light, and stories.
+                        </p>
+                        <p>
+                            From participating in prominent resim sergisi (painting exhibitions) to constantly refining
+                            her style, Yasaman creates art that resonates timelessly.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="gallery container" tabindex="-1" aria-labelledby="gallery-title">
+                <h2 id="gallery-title">Gallery</h2>
+                <p class="section-description">A selection of her most cherished works</p>
+                <div class="gallery-grid">
+                    <figure class="gallery-item" tabindex="0">
+                        <img src="images/art1.jpg" alt="Whispering Dreams – pencil sketch" />
+                        <figcaption>Whispering Dreams</figcaption>
+                    </figure>
+                    <figure class="gallery-item" tabindex="0">
+                        <img src="images/art2.jpg" alt="Sunset Hues – acrylic painting" />
+                        <figcaption>Sunset Hues</figcaption>
+                    </figure>
+                    <figure class="gallery-item" tabindex="0">
+                        <img src="images/art3.jpg" alt="Floral Spirit – watercolor" />
+                        <figcaption>Floral Spirit</figcaption>
+                    </figure>
+                    <figure class="gallery-item" tabindex="0">
+                        <img src="images/art4.jpg" alt="Reflections – mixed media" />
+                        <figcaption>Reflections</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Exhibitions Section -->
+            <section id="exhibitions" class="exhibitions container" tabindex="-1" aria-labelledby="exhibitions-title">
+                <h2 id="exhibitions-title">Exhibitions</h2>
+                <p class="section-description">Where Yasaman's art has been proudly showcased</p>
+                <ul class="exhibition-list">
+                    <li>
+                        <strong>Spring Art Expo 2024</strong> – March 2024, Local Art Gallery<br />
+                        A collection of original watercolors and pencil sketches.
+                    </li>
+                    <li>
+                        <strong>Young Artists Resim Sergisi</strong> – December 2023, Cultural Center<br />
+                        Group exhibition centered on nature-themed artworks.
+                    </li>
+                    <li>
+                        <strong>Colors of Emotion</strong> – July 2023, Downtown Art Hall<br />
+                        Solo exhibition featuring mixed media exploring emotional depth.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact container" tabindex="-1" aria-labelledby="contact-title">
+                <h2 id="contact-title">Get in Touch</h2>
+                <p>If you'd like to commission a piece, collaborate, or inquire, please reach out via the form below.
+                </p>
+
+                <!-- Formspree Contact Form -->
+                <form id="contact-form" action="https://formspree.io/f/xjkolbwg" method="POST" class="contact-form"
+                    novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name"
+                        autocomplete="name" />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address"
+                        autocomplete="email" />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Write your message here..."></textarea>
+
+                    <!-- HoneyPot Anti-Spam Field (hidden) -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+                    <!-- Redirect on success -->
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+
+                    <div id="form-status" aria-live="polite" role="alert" class="form-status"></div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container footer-content">
+                <p>© 2025 Yasaman Jamiyeva. All rights reserved.</p>
+                <nav class="social-links" aria-label="Social media links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a5c8ff"
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 3a1 1 0 110 2 1 1 0 010-2zm-5 1a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a5c8ff"
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M22 12a10 10 0 10-11.63 9.87v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.86 0 1.76.15 1.76.15v2h-1c-1 0-1.3.62-1.3 1.26V12h2.22l-.35 3h-1.87v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a5c8ff"
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M22.46 6c-.77.34-1.5.57-2.25.68a3.94 3.94 0 001.72-2.18 7.72 7.72 0 01-2.5.95 3.91 3.91 0 00-6.67 3.56 11.1 11.1 0 01-8.06-4.09 3.9 3.9 0 001.21 5.22 3.88 3.88 0 01-1.77-.48v.05a3.92 3.92 0 003.13 3.83 3.91 3.91 0 01-1.76.07 3.92 3.92 0 003.66 2.73A7.83 7.83 0 014 18.2a11.07 11.07 0 006 1.75c7.21 0 11.16-5.98 11.16-11.16 0-.17 0-.34-.01-.51A7.96 7.96 0 0022.46 6z" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a5c8ff"
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 4.514 2.92 8.32 6.936 9.54-.096-.81-.18-2.053.038-2.94.198-.8 1.27-5.108 1.27-5.108s-.326-.653-.326-1.616c0-1.514.877-2.645 1.97-2.645.93 0 1.38.697 1.38 1.53 0 .933-.594 2.328-.9 3.626-.256 1.09.54 1.98 1.6 1.98 1.92 0 3.404-2.022 3.404-4.933 0-2.553-1.836-4.342-4.46-4.342-3.04 0-4.82 2.278-4.82 4.63 0 .927.356 1.92.8 2.456.088.107.1.2.073.308-.08.338-.257 1.093-.29 1.24-.044.2-.146.245-.34.148-1.268-.59-2.06-2.437-2.06-3.93 0-3.196 2.32-6.132 6.695-6.132 3.51 0 6.235 2.525 6.235 5.9 0 3.516-2.214 6.352-5.3 6.352-1.034 0-2.007-.536-2.34-1.156l-.64 2.436c-.23.91-.853 2.045-1.273 2.735.96.296 1.975.456 3.03.456 5.523 0 10-4.478 10-10S17.523 2 12 2z" />
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="background-animation.js" defer></script>
+</body>
+
+</html>
